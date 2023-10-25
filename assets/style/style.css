@@ -1,0 +1,227 @@
+/* -------------------------------- CSS-RESET ------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, li {
+    font-family: 'Myriad Pro Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.12rem;
+}
+h2 {
+    font-family: 'Myriad Pro Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #324382;
+}
+
+/* --------------------------------- HEADER --------------------------------- */
+
+header {
+    padding: 40px 65px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img {
+    width: 300px;
+}
+
+/* ---------------------------------- MAIN ---------------------------------- */
+
+main h2 {
+    margin-bottom: 20px;
+}
+main ul li input[type=text], main ul li input[type=date]{
+    border: none;
+    background: #ced0db;
+    border-radius: 3px;
+    color: rgb(56, 56, 56);
+    font-size: 0.95rem;
+    padding: 1px 4px;
+}
+main ul li input[type=text]:focus-visible {
+    outline: none;
+}
+main ul li {
+    margin: 5px 0;
+}
+
+.registration-form {
+    padding: 40px 60px;
+}
+.registration-form ul {
+    margin-bottom: 18px;
+}
+
+.parental-authorization {
+    padding: 10px 60px 50px;
+}
+.parental-authorization p {
+    margin-bottom: 18px;
+}
+main .end-main {
+    margin-top: 40px;
+}
+main .end-main li {
+    margin: 20px 0;
+}
+
+/* --------------------------------- BUTTON --------------------------------- */
+
+.button-part {
+    padding: 0 60px 30px;
+}
+.button-part button {
+    border-radius: 4px;
+    padding: 10px 30px;
+    border: none;
+    background: #324382;
+    color: rgb(233, 233, 233);
+    cursor: pointer;
+    transition: 0.35s;
+}
+.button-part button:hover {
+    background: #29386b;
+}
+
+/* ------------------------------ MEDIA-QUERIES ----------------------------- */
+
+@media screen and (max-width: 710px) {
+    .button-part {
+        padding: 0 20px 30px;
+    }
+    .registration-form {
+        padding: 40px 20px;
+    }
+    .parental-authorization {
+        padding: 10px 20px 50px;
+    }
+    header {
+        padding: 40px 30px 40px 15px;
+    }
+    header .logo img {
+        width: 220px;
+    }
+    *, li {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    main ul li input[type=text], main ul li input[type=date]{
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width: 475px) {
+    .button-part {
+        padding: 0 16px 30px;
+    }
+    .registration-form {
+        padding: 40px 16px;
+    }
+    .parental-authorization {
+        padding: 10px 16px 50px;
+    }
+    header {
+        padding: 35px 20px 20px 10px;
+    }
+    header .logo img {
+        width: 160px;
+    }
+    *, li {
+        font-size: 0.9rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    main ul li input[type=text], main ul li input[type=date]{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .button-part {
+        padding: 0 12px 20px;
+    }
+    .registration-form {
+        padding: 40px 12px;
+    }
+    .parental-authorization {
+        padding: 10px 12px 20px;
+    }
+    header {
+        padding: 30px 12px 20px 10px;
+    }
+    header .logo img {
+        width: 135px;
+    }
+    header ul li {
+        font-size: 0.75rem;
+    }
+}
+@media screen and (max-width: 305px) {
+    .button-part {
+        padding: 0 12px 20px;
+    }
+    .registration-form {
+        padding: 40px 12px;
+    }
+    .parental-authorization {
+        padding: 10px 12px 20px;
+    }
+    header {
+        padding: 30px 12px 20px 10px;
+    }
+    header .logo img {
+        width: 115px;
+    }
+    header ul li {
+        font-size: 0.7rem;
+    }
+    *, li {
+        font-size: 0.85rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    main ul li input[type=text], main ul li input[type=date]{
+        font-size: 0.78rem;
+    }
+}

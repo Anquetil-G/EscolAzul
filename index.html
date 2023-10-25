@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EscolAzul</title>
+    <link rel="stylesheet" href="./assets/fonts/myriad-pro/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/img/escolazul-logo.webp" alt="logo">
+        </div>
+        <div class="header-right-part">
+            <ul>
+                <li>EscolAzul</li>
+                <li>Av. Manuel Remígio 87,</li>
+                <li>Nazaré, Portugal</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+        <div class="registration-form">
+            <h2>Fiche d'inscription cours de surf</h2>
+            <p></p>
+            <div>
+                <ul>
+                    <li>Prénom / Nom : <input type="text" id="nameInput" class="inputs"></li>
+                    <li>Adresse : <input type="text" id="addressInput" class="inputs"></li>
+                    <li>Code postal / Ville : <input type="text" id="cityInput" class="inputs"></li>
+                    <li>Date de naissance : <input type="date" id="birthdayInput" class="inputs"></li>
+                    <li>Téléphone : <input type="text" id="phoneInput" class="inputs"></li>
+                    <li>Email : <input type="text" id="emailInput" class="inputs"></li>
+                </ul>
+                <p>Pour un équipement adapté à votre morphologie et pour votre confort, veuillez renseigner les
+                champs suivants :</p>
+                <ul>
+                    <li>- Quel est vote niveau : <input type="radio" name="level" id="debutant" class="inputs"><label for="debutant">Débutant (6 à 8 ans)</label><input type="radio" name="level" id="moyen" class="inputs"><label for="moyen">Moyen (9 à 12 ans)</label></li>
+                    <li>- Votre taille : <input type="text" id="sizeInput" class="inputs">cm</li>
+                    <li>- Votre poids : <input type="text" id="weightInput" class="inputs">Kg</li>
+                </ul>
+                <h3>FORMULES CLUB (entrainement à l'année)</h3>
+            </div>
+        </div>
+        <div class="parental-authorization">
+            <h2>AUTORISATION PARENTALE (pour les mineurs)</h2>
+            <p>Je certifie que je suis médicalement apte à la pratique sportive et sait nager. En conséquence, je
+            dégage l'école de surf EscolAzul de toute responsabilité en cas d'accident lui survenant ou
+            provoqué par suite de mon inaptitude physique ou médicale ou non-respect des consignes du
+            moniteur. Je déclare avoir été informé des garanties d'assurance en responsabilité civile et des
+            garanties complémentaires pouvant être souscrites en cas de dommage corporel me survenant.
+            J'ai pris connaissance et j'accepte les conditions générales de vente.</p>
+            <ul>
+                <li>Je soussigné(e), <input type="text" id="parentInput" class="inputs">, père/mère/tuteur légal, autorise mon fils/ ma fille.</li>
+                <li>Fait à <input type="text" id="hourDateInput" class="inputs"> le <input type="date" id="dateInput" class="inputs">.</li>
+            </ul>
+            <ul class="end-main">
+                <li>Pour tout renseignement complémentaire, notre équipe reste à votre disposition.</li>
+                <li>A très bientôt dans EscolAzul, pour réveiller ta vague !</li>
+                <li>Vos moniteurs, Clement Colosse, Alyénor Huré, Leelou Delaloy et Fanette Anquetil</li>
+            </ul>
+        </div>
+    </main>
+    <section class="button-part">
+        <button id="sendButton">Envoyer</button>
+    </section>
+    <script src="./javascript/smtp.js"></script>
+    <script src="./javascript/index.js"></script>
+</body>
+</html>
